@@ -11,7 +11,7 @@ passport.use(
     {
       clientID: process.env.FACEBOOK_CLIENT_ID,
       clientSecret: process.env.FACEBOOK_SECRET_KEY,
-      callbackURL: "http://localhost:8000/auth/facebook/callback",
+      callbackURL: "https://mojoweb.onrender.com/auth/facebook/callback",
     },
     async function (accessToken, refreshToken, profile, cb) {
       try {
